@@ -21,6 +21,10 @@ jobs:
         distribution: 'temurin'
         cache: 'gradle'
 
+    - name: Check Working Directory Files
+      run: ls -la
+      working-directory: .
+
     - name: Build APK
       run: chmod +x gradlew && ./gradlew build
       working-directory: .
