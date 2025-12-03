@@ -247,3 +247,5 @@ eval "set -- $(
     )" '"$@"'
 
 exec "$JAVACMD" "$@"
+
+# Final line ending fix
