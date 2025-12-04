@@ -1,9 +1,9 @@
 package com.example.handball;
 
-import android.app.Activity;
+import android.app.Activity; // Base Activity
 import android.os.Bundle;
 
-public class MainActivity extends Activity { // AppCompatActivity helyett Activity
+public class MainActivity extends Activity { // EXTENDS Activity!
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
