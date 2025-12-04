@@ -1,26 +1,28 @@
+override fun onNavigationItemSelected(item: MenuItem): Boolean {
+    when (item.itemId) {
 
-plugins {
-    id 'com.android.application'
-}
+        R.id.nav_home -> {
+            val intent = Intent(this, HomeActivity::class.java)
+            startActivity(intent)
+        }
 
-android {
-    namespace 'com.example.handball'
-    compileSdk 33
+        R.id.nav_matches -> {
+            val intent = Intent(this, MatchesActivity::class.java)
+            startActivity(intent)
+        }
 
-    defaultConfig {
-        applicationId "com.example.handball"
-        minSdk 21
-        targetSdk 33
-        versionCode 1
-        versionName "1.0"
-    }
+        R.id.nav_players -> {
+            val intent = Intent(this, PlayersActivity::class.java)
+            startActivity(intent)
+        }
 
-    buildTypes {
-        release {
-            minifyEnabled false
+        // 🔵 ÚJ MENÜPONT KEZELÉSE (A pont 6. lépés)
+        R.id.nav_statistics -> {
+            val intent = Intent(this, StatisticsActivity::class.java)
+            startActivity(intent)
         }
     }
-}
 
-dependencies {
+    drawerLayout.closeDrawers()
+    return true
 }
