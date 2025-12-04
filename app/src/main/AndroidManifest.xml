@@ -3,7 +3,13 @@
 
     <application
         android:label="Handball Stats"
-        android:theme="@android:style/Theme.Light.NoTitleBar" >
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:supportsRtl="true">
 
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
