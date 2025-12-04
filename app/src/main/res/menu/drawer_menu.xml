@@ -1,13 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
         android:id="@+id/nav_home"
-        android:title="Főoldal"
+        android:title="Kezdőlap"
         android:icon="@drawable/ic_home" />
 
     <item
-        android:id="@+id/nav_new_match"
-        android:title="Új mérkőzés"
-        android:icon="@drawable/ic_add" />
+        android:id="@+id/nav_matches"
+        android:title="Mérkőzések"
+        android:icon="@drawable/ic_list" />
+
+    <item
+        android:id="@+id/nav_players"
+        android:title="Játékosok"
+        android:icon="@drawable/ic_person" />
+
+    <!-- 🔵 ÚJ MENÜPONT (A pont 5. lépés) -->
+    <item
+        android:id="@+id/nav_statistics"
+        android:title="Statisztikák"
+        android:icon="@drawable/ic_stats" />
 
 </menu>
