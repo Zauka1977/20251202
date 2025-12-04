@@ -1,9 +1,9 @@
 package com.example.handball;
 
-import android.app.Activity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class MainActivity extends Activity { // Függőségmentes kiterjesztés!
+public class MainActivity extends AppCompatActivity { // Most már nem kell hibát okoznia!
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
