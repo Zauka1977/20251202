@@ -3,9 +3,7 @@
 
     <application
         android:label="Handball Stats"
-        android:theme="@android:style/Theme.Light.NoTitleBar"
-        android:allowBackup="true"
-        android:supportsRtl="true">
+        android:theme="@android:style/Theme.Light.NoTitleBar" >
 
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
