@@ -4,6 +4,7 @@
     <application
         android:label="Handball Stats"
         android:theme="@android:style/Theme.Light.NoTitleBar" > 
+
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
