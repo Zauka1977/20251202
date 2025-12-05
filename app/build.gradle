@@ -1,8 +1,4 @@
 
-        R.id.nav_home -> {
-            val intent = Intent(this, HomeActivity::class.java)
-            startActivity(intent)
-        }
 
         R.id.nav_matches -> {
             val intent = Intent(this, MatchesActivity::class.java)
