@@ -4,7 +4,8 @@ plugins {
 }
 
 android {
-    namespace 'com.example.handball' // <- EZ AZ ÚJ, HIÁNYZÓ SOR!
+    // 💥💥 EZ AZ A SOR, AMINEK HIÁNYA OKOZZA A PIROS BUILDET 💥💥
+    namespace 'com.example.handball' 
     compileSdk 34 
 
     defaultConfig {
