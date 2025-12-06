@@ -1,22 +1,35 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+}
 
+android {
+    compileSdk 34 // Használhatsz más számot is, ha szükséges
 
-        R.id.nav_matches -> {
-            val intent = Intent(this, MatchesActivity::class.java)
-            startActivity(intent)
-        }
-
-        R.id.nav_players -> {
-            val intent = Intent(this, PlayersActivity::class.java)
-            startActivity(intent)
-        }
-
-        // 🔵 ÚJ MENÜPONT KEZELÉSE (A pont 6. lépés)
-        R.id.nav_statistics -> {
-            val intent = Intent(this, StatisticsActivity::class.java)
-            startActivity(intent)
-        }
+    defaultConfig {
+        applicationId "com.example.handball"
+        minSdk 24 // Használd a minimális támogatott SDK-t
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
     }
 
-    drawerLayout.closeDrawers()
-    return true
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    // A minimalista, alapvető Android Java projekthez szükséges függőségek:
+    // Mivel a Java fájlban 'extends Activity'-t használsz, az alapvető AppCompat
+    // vagy ConstraintLayout függőségek NEM KÖTELEZŐEK, de az alap teszteléshez ez kell:
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
 }
