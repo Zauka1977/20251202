@@ -4,11 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 34 // Használhatsz más számot is, ha szükséges
+    namespace 'com.example.handball' // <- EZ AZ ÚJ, HIÁNYZÓ SOR!
+    compileSdk 34 
 
     defaultConfig {
         applicationId "com.example.handball"
-        minSdk 24 // Használd a minimális támogatott SDK-t
+        minSdk 24
         targetSdk 34
         versionCode 1
         versionName "1.0"
@@ -23,9 +24,6 @@ android {
 }
 
 dependencies {
-    // A minimalista, alapvető Android Java projekthez szükséges függőségek:
-    // Mivel a Java fájlban 'extends Activity'-t használsz, az alapvető AppCompat
-    // vagy ConstraintLayout függőségek NEM KÖTELEZŐEK, de az alap teszteléshez ez kell:
     implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
